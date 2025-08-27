@@ -6,37 +6,50 @@
     <title>The Three Plays</title>
     <!-- Tailwind CSS for utility classes -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts: Inter and Graduate -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Link to your external stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Define custom font families */
+        .font-heading {
+            font-family: 'Graduate', serif;
+        }
+        .font-body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-200 text-gray-800 font-body">
 
     <!-- Main container with flex layout to push footer down -->
     <div class="flex flex-col min-h-screen">
 
         <!-- Header Section -->
-        <header class="bg-white shadow-sm sticky top-0 z-10">
+        <header class="bg-white shadow-md sticky top-0 z-10">
             <div class="container mx-auto px-6 py-4 flex justify-between items-center">
                 <!-- Logo -->
-                <a href="#" class="text-2xl font-bold text-red-600 tracking-tight">
+                <a href="#" class="flex items-center text-3xl text-red-700 tracking-wider font-heading">
+                    <!-- SVG Graphic for the Logo -->
+                    <svg class="w-8 h-8 mr-3 text-red-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                    </svg>
                     The Three Plays
                 </a>
                 <!-- Navigation Links -->
                 <nav>
-                    <a href="#plays" class="text-gray-600 hover:text-red-600 transition duration-300 ml-6 text-lg">Plays</a>
-                    <a href="#about" class="text-gray-600 hover:text-red-600 transition duration-300 ml-6 text-lg">About</a>
+                    <a href="#plays" class="text-gray-700 hover:text-red-700 transition duration-300 ml-6 text-lg font-semibold">Plays</a>
+                    <a href="#about" class="text-gray-700 hover:text-red-700 transition duration-300 ml-6 text-lg font-semibold">About</a>
                 </nav>
             </div>
         </header>
 
         <!-- Main Content (Hero Section) -->
         <main class="flex-grow flex items-center justify-center text-center px-4">
-            <div class="max-w-3xl">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-tight">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl text-gray-900 leading-tight tracking-wide font-heading">
                     There are three plays that decide every football game.
                 </h1>
             </div>
@@ -44,7 +57,7 @@
 
         <!-- Footer Section -->
         <footer class="bg-white mt-12 py-6">
-            <div class="container mx-auto px-6 text-center text-gray-500">
+            <div class="container mx-auto px-6 text-center text-gray-600">
                 <p>&copy; 2024 The Three Plays. All Rights Reserved.</p>
             </div>
         </footer>
