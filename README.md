@@ -1,17 +1,12 @@
-# The Three Plays — Top 25 Base Page
+# The Three Plays — Minimal Landing
 
-This is the starter you asked for: a **Top 25 games** picker page. Tap ★ to flag the matchups we'll cover, then on Sunday we'll add per‑game pages with the three decisive plays.
+White/gray/black with a red brand mark. Two links up top: **Plays** and **About**. Tagline: *There are three plays that decide every football game.*
 
 ## Files
-- `index.html` — Top 25 picker with filters and localStorage ★ picks
-- `styles.css` — base styles
-- `assets/logo-t3p.svg`, `assets/favicon.svg` — brand assets
+- `index.html`
+- `styles.css`
+- `assets/favicon.svg`, `assets/logo-t3p.svg` (optional visuals)
 
-## Deploy (GitHub Pages)
-1) Create a new repo and upload this folder's contents (keep the `assets` folder).  
-2) Settings → Pages → Source: `main`, root.  
-3) Optional: add a `CNAME` file with `thethreeplays.com` and set Porkbun DNS.  
-4) Enable HTTPS.
-
-## Next
-We'll add `/games/{slug}.html` templates on Sunday and wire the “Add highlights Sunday” link to them.
+## Customize
+- Update the **Plays** list links under `#plays` each week with your upsets/close games.
+- Update **About** social buttons with your real URLs.

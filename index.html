@@ -3,209 +3,79 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Three Plays — Top 25 Games</title>
-  <meta name="description" content="Top 25 college football games. Pick the best games, then we’ll break down the three plays that decided them." />
+  <title>The Three Plays</title>
+  <meta name="description" content="There are three plays that decide every football game." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    :root{--bg:#fff;--text:#1f2937;--muted:#6b7280;--line:#e5e7eb;--accent:#e11d48}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;color:var(--text);background:var(--bg)}
-    header{position:sticky;top:0;background:rgba(255,255,255,.9);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--line)}
-    .container{max-width:1100px;margin:0 auto;padding:20px}
-    .row{display:flex;align-items:center;justify-content:space-between}
-    .brand{display:flex;gap:12px;align-items:center;font-weight:800}
-    .brand img{height:28px}
-    nav a{margin-left:16px;text-decoration:none;color:var(--text)}
-    nav a:hover{color:var(--accent)}
-    .kicker{color:var(--accent);font-weight:800;letter-spacing:.08em;text-transform:uppercase;font-size:12px}
-    h1{margin:.3rem 0 0;font-size:40px;line-height:1.06}
-    .lead{color:var(--muted)}
-    .controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
-    .controls input,.controls select{padding:10px 12px;border:1px solid var(--line);border-radius:10px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:16px}
-    .card{border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff}
-    .tag{display:inline-block;font-size:12px;padding:3px 8px;border-radius:999px;border:1px solid #ffe4e9;background:#fff1f3;color:var(--accent)}
-    .muted{color:var(--muted)}
-    .star{cursor:pointer;font-size:18px;user-select:none;background:none;border:0}
-    .star[aria-pressed="true"]{color:#f59e0b}
-    .pill{font-size:12px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer}
-    footer{border-top:1px solid var(--line);margin-top:24px}
-  </style>
 </head>
 <body>
-  <header>
-    <div class="container row">
-      <div class="brand">
-        <img src="assets/logo-t3p.svg" alt="The Three Plays logo" />
-        <span>The Three Plays</span>
-      </div>
-      <nav>
-        <a href="#top25">Top 25</a>
-        <a href="#featured">Featured</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-name">The Three Plays</span>
+      </a>
+      <nav class="nav">
+        <a href="#plays">Plays</a>
         <a href="#about">About</a>
       </nav>
+      <button class="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </header>
 
-  <main class="container">
+  <main id="top">
     <section class="hero">
-      <div class="kicker">Base schedule page</div>
-      <h1>Top 25 Games — Week 1</h1>
-      <p class="lead">Tap the ★ to flag games you want to feature. On Sunday we’ll add the three plays that swung each game.</p>
-      <div class="controls">
-        <input id="search" placeholder="Search team, network, city" />
-        <select id="day">
-          <option value="all">All days</option>
-          <option value="2025-08-28">Thu, Aug 28</option>
-          <option value="2025-08-29">Fri, Aug 29</option>
-          <option value="2025-08-30">Sat, Aug 30</option>
-          <option value="2025-08-31">Sun, Aug 31</option>
-        </select>
-        <select id="network">
-          <option value="all">All networks</option>
-          <option>ABC</option>
-          <option>FOX</option>
-          <option>ESPN</option>
-          <option>ESPN+</option>
-          <option>ACC Network</option>
-          <option>Big Ten Network</option>
-          <option>NBC/Peacock</option>
-          <option>Peacock</option>
-          <option>FS1</option>
-          <option>SEC Network</option>
-        </select>
-        <button id="copyPicks" class="pill">Copy my ★ picks</button>
+      <div class="container hero-inner">
+        <h1><span class="brand-red">The Three Plays</span></h1>
+        <p class="tagline">There are three plays that decide every football game.</p>
+        <div class="cta">
+          <a class="btn btn-red" href="#plays">See Plays</a>
+          <a class="btn btn-outline" href="#about">About</a>
+        </div>
       </div>
     </section>
 
-    <section id="top25" class="grid" aria-live="polite"></section>
-
-    <section id="featured" class="card" style="margin-top:16px">
-      <h3>Featured games (your ★ picks)</h3>
-      <ol id="featured-list" class="muted"></ol>
+    <section id="plays" class="plays">
+      <div class="container">
+        <h2>Upsets & Close Games of the Week</h2>
+        <p class="muted">This section will link to your weekly picks. For now, these are placeholders.</p>
+        <ul class="list">
+          <li><a href="#" title="Replace with your link">Example: Tennessee vs Syracuse — 3 plays that swung it</a></li>
+          <li><a href="#" title="Replace with your link">Example: Texas vs Ohio State — late-game sequence</a></li>
+          <li><a href="#" title="Replace with your link">Example: Georgia vs Marshall — explosive vs efficiency</a></li>
+        </ul>
+      </div>
     </section>
 
-    <section id="about" class="card" style="margin-top:16px">
-      <h3>What happens next</h3>
-      <p class="muted">After games finish, we post a recap page per matchup with the three decisive plays (and a fourth when chaos rules). Each recap will include timestamps, clips, and a quick EPA/Win-Prob blurb. For now, use ★ to mark which games we’ll prioritize.</p>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About</h2>
+        <p class="muted">Quick, clean breakdowns. Three plays that decided the result. Built for SEC first, then everywhere the games matter.</p>
+        <div class="socials">
+          <!-- Replace these with your actual profiles -->
+          <a class="btn btn-outline" href="https://x.com/TheThreePlays" target="_blank" rel="noopener">X / Twitter</a>
+          <a class="btn btn-outline" href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
+          <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Discord</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container row">
-      <span class="muted">© <span id="y"></span> The Three Plays</span>
-      <span class="muted">Contact: you@thethreeplays.com</span>
+  <footer class="site-footer">
+    <div class="container foot-inner">
+      <p>© <span id="y"></span> The Three Plays</p>
     </div>
   </footer>
 
   <script>
-  document.getElementById('y').textContent = new Date().getFullYear()
-
-  const games = [
-    { date:'2025-08-28', matchup:'No. 25 Boise State at South Florida', time:'5:30 p.m.', network:'ESPN' },
-    { date:'2025-08-29', matchup:'No. 12 Illinois vs. Western Illinois', time:'7:30 p.m.', network:'Peacock' },
-    { date:'2025-08-30', matchup:'No. 1 Texas at No. 3 Ohio State', time:'12 p.m.', network:'FOX' },
-    { date:'2025-08-30', matchup:'No. 2 Penn State vs. Nevada', time:'3:30 p.m.', network:'CBS/Paramount+' },
-    { date:'2025-08-30', matchup:'No. 4 Clemson vs. No. 9 LSU', time:'7:30 p.m.', network:'ABC' },
-    { date:'2025-08-30', matchup:'No. 5 Georgia vs. Marshall', time:'3:30 p.m.', network:'ESPN' },
-    { date:'2025-08-30', matchup:'No. 7 Oregon vs. Montana State', time:'4 p.m.', network:'Big Ten Network' },
-    { date:'2025-08-30', matchup:'No. 8 Alabama at Florida State', time:'3:30 p.m.', network:'ABC' },
-    { date:'2025-08-30', matchup:'No. 11 Arizona State vs. Northern Arizona', time:'10 p.m.', network:'ESPN+' },
-    { date:'2025-08-30', matchup:'No. 14 Michigan vs. New Mexico', time:'7:30 p.m.', network:'NBC/Peacock' },
-    { date:'2025-08-30', matchup:'No. 15 Florida vs. Long Island', time:'7 p.m.', network:'ESPN+/SECN+' },
-    { date:'2025-08-30', matchup:'No. 16 SMU vs. East Texas A&M', time:'9 p.m.', network:'ACC Network' },
-    { date:'2025-08-30', matchup:'No. 17 Kansas State vs. North Dakota', time:'7 p.m.', network:'ESPN+' },
-    { date:'2025-08-30', matchup:'No. 18 Oklahoma vs. Illinois State', time:'6 p.m.', network:'ESPN+/SECN+' },
-    { date:'2025-08-30', matchup:'No. 19 Texas A&M vs. UTSA', time:'7 p.m.', network:'ESPN' },
-    { date:'2025-08-30', matchup:'No. 20 Indiana vs. Old Dominion', time:'2:30 p.m.', network:'FS1' },
-    { date:'2025-08-30', matchup:'No. 21 Ole Miss vs. Georgia State', time:'7:45 p.m.', network:'SEC Network' },
-    { date:'2025-08-30', matchup:'No. 22 Iowa State vs. South Dakota', time:'3:30 p.m.', network:'FOX' },
-    { date:'2025-08-30', matchup:'No. 23 Texas Tech vs. Arkansas–Pine Bluff', time:'7:30 p.m.', network:'ESPN+' },
-    { date:'2025-08-30', matchup:'No. 24 Tennessee vs. Syracuse (Atlanta)', time:'12 p.m.', network:'ABC' },
-    { date:'2025-08-31', matchup:'No. 6 Notre Dame at No. 10 Miami (Fla.)', time:'7:30 p.m.', network:'ABC' },
-    { date:'2025-08-31', matchup:'No. 13 South Carolina vs. Virginia Tech (Atlanta)', time:'3 p.m.', network:'ESPN' },
-  ];
-
-  const picksKey = 't3p-featured';
-  const picks = new Set(JSON.parse(localStorage.getItem(picksKey) || '[]'));
-
-  function savePicks(){ localStorage.setItem(picksKey, JSON.stringify([...picks])); renderFeatured(); }
-
-  function render(list){
-    const q = document.getElementById('search').value.toLowerCase();
-    const day = document.getElementById('day').value;
-    const net = document.getElementById('network').value;
-    const wrap = document.getElementById('top25');
-    wrap.innerHTML = '';
-    list.filter(g => (
-      (day==='all' || g.date===day) &&
-      (net==='all' || g.network===net) &&
-      (!q || (g.matchup+g.network).toLowerCase().includes(q))
-    )).sort((a,b)=> (a.date+a.time).localeCompare(b.date+b.time)).forEach((g,idx)=>{
-      const card = document.createElement('article');
-      card.className='card';
-      const star = document.createElement('button');
-      star.className='star';
-      star.setAttribute('aria-label','feature this game');
-      const id = `${g.date}-${idx}`;
-      star.dataset.id = id;
-      const on = picks.has(id);
-      star.setAttribute('aria-pressed', on);
-      star.textContent = on ? '★' : '☆';
-      star.addEventListener('click', ()=>{ if(picks.has(id)) picks.delete(id); else picks.add(id); savePicks(); render(games); });
-
-      const h4 = document.createElement('h4');
-      h4.textContent = g.matchup;
-      const p = document.createElement('p');
-      p.className='muted';
-      p.textContent = new Date(g.date+'T12:00:00').toLocaleDateString(undefined,{weekday:'short', month:'short', day:'numeric'}) + ' • ' + g.time + ' • ' + g.network;
-
-      const top = document.createElement('div');
-      top.style.display='flex'; top.style.justifyContent='space-between'; top.style.alignItems='center';
-      const left = document.createElement('div');
-      left.innerHTML = `<span class="tag">Top 25</span>`;
-      top.appendChild(left); top.appendChild(star);
-
-      const actions = document.createElement('div');
-      const link = document.createElement('a');
-      link.href = '#';
-      link.onclick = (e)=>{ e.preventDefault(); alert('Game page comes next. On Sunday we’ll add timestamps and clips.'); };
-      link.textContent = 'Add highlights Sunday';
-
-      actions.appendChild(link);
-
-      card.appendChild(top);
-      card.appendChild(h4);
-      card.appendChild(p);
-      card.appendChild(actions);
-      wrap.appendChild(card);
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav');
+    burger.addEventListener('click', () => {
+      burger.classList.toggle('open');
+      nav.classList.toggle('open');
     });
-  }
-
-  function renderFeatured(){
-    const ul = document.getElementById('featured-list');
-    ul.innerHTML = '';
-    const ids = [...picks];
-    if(!ids.length){ ul.innerHTML = '<li class="muted">No picks yet. Tap ★ on games above.</li>'; return; }
-    games.forEach((g,idx)=>{
-      const id = `${g.date}-${idx}`;
-      if(picks.has(id)){
-        const li = document.createElement('li');
-        li.textContent = `${g.matchup} — ${g.time} | ${g.network}`;
-        ul.appendChild(li);
-      }
-    });
-  }
-
-  ['search','day','network'].forEach(id=> document.getElementById(id).addEventListener('input', ()=>render(games)));
-  document.getElementById('copyPicks').addEventListener('click', ()=>{
-    const lines = [];
-    games.forEach((g,idx)=>{ const id = `${g.date}-${idx}`; if(picks.has(id)) lines.push(`${g.matchup} — ${g.time} | ${g.network}`); });
-    navigator.clipboard.writeText(lines.join('\n')).then(()=>{ alert('Copied your ★ picks to clipboard.'); });
-  });
-
-  render(games); renderFeatured();
   </script>
 </body>
 </html>

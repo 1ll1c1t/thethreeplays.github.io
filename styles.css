@@ -1,1 +1,65 @@
-body{font-family:system-ui;padding:20px}
+/* Minimal, sleek white/gray with red accent */
+:root{
+  --bg:#ffffff;
+  --text:#111827;   /* gray-900 */
+  --muted:#6b7280;  /* gray-500 */
+  --line:#e5e7eb;   /* gray-200 */
+  --red:#e11d48;    /* rose-600 */
+  --shadow:0 10px 30px rgba(0,0,0,.06);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+
+.container{max-width:1000px;margin:0 auto;padding:0 20px}
+
+.site-header{
+  position:sticky;top:0;z-index:10;
+  backdrop-filter:saturate(1.2) blur(8px);
+  background:rgba(255,255,255,.85);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{text-decoration:none;color:inherit}
+.brand-name{font-weight:900;letter-spacing:.2px;color:var(--red)}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{text-decoration:none;color:var(--text);font-weight:600}
+.nav a:hover{color:var(--red)}
+.burger{display:none;background:none;border:0;padding:6px;cursor:pointer}
+.burger span{display:block;width:22px;height:2px;background:#777;margin:4px 0;transition:.2s}
+
+.hero{padding:100px 0 70px;border-bottom:1px solid var(--line)}
+.hero-inner{text-align:center}
+h1{font-size:54px;line-height:1.05;margin:0}
+.brand-red{color:var(--red)}
+.tagline{font-size:20px;color:var(--muted);margin:10px 0 18px}
+.cta{display:flex;gap:12px;justify-content:center}
+.btn{display:inline-block;padding:10px 16px;border-radius:12px;border:1px solid var(--line);text-decoration:none;font-weight:800}
+.btn-red{background:var(--red);color:#fff;border-color:var(--red)}
+.btn-outline{background:#fff;color:var(--text)}
+.btn:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+
+.plays{padding:60px 0}
+.about{padding:60px 0;background:#fafafa;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h2{margin:0 0 6px}
+.muted{color:var(--muted)}
+.list{padding-left:18px;margin:8px 0 0}
+.list a{color:var(--text);text-decoration:none}
+.list a:hover{color:var(--red)}
+.socials{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+
+.site-footer{padding:24px 0}
+.foot-inner{border-top:1px solid var(--line);padding-top:14px;text-align:center;color:var(--muted)}
+
+@media (max-width: 800px){
+  h1{font-size:40px}
+  .nav{display:none;position:absolute;right:20px;top:64px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);padding:10px 12px;flex-direction:column;gap:10px}
+  .nav.open{display:flex}
+  .burger{display:block}
+}
