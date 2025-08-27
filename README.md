@@ -1,12 +1,12 @@
-# The Three Plays — Minimal Landing
+The Three Plays
+This is the official website for The Three Plays, a project dedicated to analyzing the key plays that determine the outcome of football games.
 
-White/gray/black with a red brand mark. Two links up top: **Plays** and **About**. Tagline: *There are three plays that decide every football game.*
+Project Structure
+index.html: The main landing page.
 
-## Files
-- `index.html`
-- `styles.css`
-- `assets/favicon.svg`, `assets/logo-t3p.svg` (optional visuals)
+styles.css: Contains all the custom styling for the website.
 
-## Customize
-- Update the **Plays** list links under `#plays` each week with your upsets/close games.
-- Update **About** social buttons with your real URLs.
+assets/: A folder for images and other media (currently empty).
+
+How to Use
+Simply open the index.html file in your web browser to view the site locally. To deploy, push the contents of this folder to a GitHub repository with GitHub Pages enabled.

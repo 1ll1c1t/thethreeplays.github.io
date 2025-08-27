@@ -1,81 +1,55 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>The Three Plays</title>
-  <meta name="description" content="There are three plays that decide every football game." />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Three Plays</title>
+    <!-- Tailwind CSS for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Link to your external stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="#top">
-        <span class="brand-name">The Three Plays</span>
-      </a>
-      <nav class="nav">
-        <a href="#plays">Plays</a>
-        <a href="#about">About</a>
-      </nav>
-      <button class="burger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Main container with flex layout to push footer down -->
+    <div class="flex flex-col min-h-screen">
+
+        <!-- Header Section -->
+        <header class="bg-white shadow-sm sticky top-0 z-10">
+            <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-bold text-red-600 tracking-tight">
+                    The Three Plays
+                </a>
+                <!-- Navigation Links -->
+                <nav>
+                    <a href="#plays" class="text-gray-600 hover:text-red-600 transition duration-300 ml-6 text-lg">Plays</a>
+                    <a href="#about" class="text-gray-600 hover:text-red-600 transition duration-300 ml-6 text-lg">About</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content (Hero Section) -->
+        <main class="flex-grow flex items-center justify-center text-center px-4">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 leading-tight">
+                    There are three plays that decide every football game.
+                </h1>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="bg-white mt-12 py-6">
+            <div class="container mx-auto px-6 text-center text-gray-500">
+                <p>&copy; 2024 The Three Plays. All Rights Reserved.</p>
+            </div>
+        </footer>
+
     </div>
-  </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-inner">
-        <h1><span class="brand-red">The Three Plays</span></h1>
-        <p class="tagline">There are three plays that decide every football game.</p>
-        <div class="cta">
-          <a class="btn btn-red" href="#plays">See Plays</a>
-          <a class="btn btn-outline" href="#about">About</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="plays" class="plays">
-      <div class="container">
-        <h2>Upsets & Close Games of the Week</h2>
-        <p class="muted">This section will link to your weekly picks. For now, these are placeholders.</p>
-        <ul class="list">
-          <li><a href="#" title="Replace with your link">Example: Tennessee vs Syracuse — 3 plays that swung it</a></li>
-          <li><a href="#" title="Replace with your link">Example: Texas vs Ohio State — late-game sequence</a></li>
-          <li><a href="#" title="Replace with your link">Example: Georgia vs Marshall — explosive vs efficiency</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <h2>About</h2>
-        <p class="muted">Quick, clean breakdowns. Three plays that decided the result. Built for SEC first, then everywhere the games matter.</p>
-        <div class="socials">
-          <!-- Replace these with your actual profiles -->
-          <a class="btn btn-outline" href="https://x.com/TheThreePlays" target="_blank" rel="noopener">X / Twitter</a>
-          <a class="btn btn-outline" href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a>
-          <a class="btn btn-outline" href="#" target="_blank" rel="noopener">Discord</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container foot-inner">
-      <p>© <span id="y"></span> The Three Plays</p>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav');
-    burger.addEventListener('click', () => {
-      burger.classList.toggle('open');
-      nav.classList.toggle('open');
-    });
-  </script>
 </body>
 </html>
