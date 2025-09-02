@@ -11,7 +11,7 @@
           "score": "45-26",
           "picks": [
             {
-              "label": "Tennessee -6.5",
+              "label": "Tennessee -13.5",
               "result": "Win"
             },
             {
@@ -208,19 +208,19 @@
           "id": "tcu-vs-north-carolina",
           "home": "TCU",
           "away": "North Carolina",
-          "score": "",
+          "score": "48-14",
           "picks": [
             {
               "label": "TCU Team Total Over 27.5",
-              "result": "Pending"
+              "result": "Win"
             },
             {
               "label": "Over 55.5",
-              "result": "Pending"
+              "result": "Win"
             },
             {
               "label": "TCU -3.5",
-              "result": "Pending"
+              "result": "Win"
             }
           ]
         }
