@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // Minimal "falling logos" effect on the homepage
 (function(){
@@ -60,3 +61,6 @@
   }
   tick();
 })();
+=======
+document.addEventListener('DOMContentLoaded',()=>{});
+>>>>>>> 184c2fc5c4c6c1c7a396f99a384fa8f18ff06af4
